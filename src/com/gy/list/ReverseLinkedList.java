@@ -1,17 +1,14 @@
 package com.gy.list;
 
 
-import java.util.ArrayList;
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
 public class ReverseLinkedList {
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
     public ListNode reverseList(ListNode head) {
         if(head == null) {
             return null;
